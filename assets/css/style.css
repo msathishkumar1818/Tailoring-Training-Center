@@ -547,6 +547,48 @@ html[dir="rtl"] .mobile-drawer {
   flex: 1;
 }
 
+.mobile-drawer-cta-item {
+  margin-top: 0.75rem;
+  list-style: none;
+}
+
+.mobile-drawer-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.8125rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  background: var(--color-magenta);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(199, 24, 101, 0.28);
+  transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.mobile-drawer-cta:hover {
+  background: var(--color-magenta-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(199, 24, 101, 0.35);
+}
+
+[data-theme="dark"] .mobile-drawer-cta {
+  background: var(--color-coral);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.35);
+}
+
+[data-theme="dark"] .mobile-drawer-cta:hover {
+  background: #ff5260;
+  color: #ffffff;
+}
+
 .mobile-nav-link {
   display: flex;
   align-items: center;
@@ -979,6 +1021,10 @@ html.dark .eyebrow {
 
 /* Section 1: Hero Editorial Showcase */
 .hero-editorial-section {
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
+  display: flex;
+  align-items: center;
   padding: 3.5rem 0 5rem;
   background: var(--bg-surface);
   position: relative;
@@ -1778,6 +1824,7 @@ textarea:focus-visible {
 /* Section 1: Hero Centered Panoramic (Full Viewport Height) */
 .hero-v2-section {
   min-height: calc(100vh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1902,8 +1949,8 @@ html.dark .hero-v2-title span {
    (Equal Height across About, Courses, Timings, Gallery, Contact)
    ============================================================ */
 .page-hero-banner {
-  min-height: 480px;
-  /* Exact same height across all 5 inner pages */
+  min-height: max(480px, calc(100vh - var(--header-height)));
+  min-height: max(480px, calc(100svh - var(--header-height)));
   display: flex;
   align-items: center;
   justify-content: center;

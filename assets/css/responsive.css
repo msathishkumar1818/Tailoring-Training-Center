@@ -855,12 +855,13 @@
 @media (max-width: 1032px) {
   .hero-v2-section {
     min-height: calc(100vh - var(--header-height));
+    min-height: calc(100svh - var(--header-height));
     padding: 4rem 1.25rem;
   }
 
   .page-hero-banner {
-    min-height: 440px;
-    /* Equal height across all 5 inner pages */
+    min-height: max(440px, calc(100vh - var(--header-height)));
+    min-height: max(440px, calc(100svh - var(--header-height)));
     padding: 4rem 1.25rem;
   }
 }
@@ -868,12 +869,13 @@
 @media (max-width: 768px) {
   .hero-v2-section {
     min-height: calc(100vh - var(--header-height));
+    min-height: calc(100svh - var(--header-height));
     padding: 3.5rem 1rem;
   }
 
   .page-hero-banner {
-    min-height: 400px;
-    /* Equal height across all 5 inner pages */
+    min-height: max(440px, calc(100vh - var(--header-height)));
+    min-height: max(440px, calc(100svh - var(--header-height)));
     padding: 3.5rem 1rem;
   }
 
@@ -888,13 +890,14 @@
 
 @media (max-width: 440px) {
   .hero-v2-section {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100svh - var(--header-height));
     padding: 3rem 1rem;
   }
 
   .page-hero-banner {
-    min-height: 380px;
-    /* Equal height across all 5 inner pages on small mobile */
+    min-height: max(720px, calc(100vh - var(--header-height)));
+    min-height: max(720px, calc(100svh - var(--header-height)));
     padding: 3rem 1rem;
   }
 
