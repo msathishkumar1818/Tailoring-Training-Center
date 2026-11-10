@@ -1,0 +1,912 @@
+/* Responsive Rules for Tailoring Training Center */
+/* Tested Breakpoints: 360, 375, 393, 412, 427, 440, 768, 960, 1032, 1280, 1440+ */
+
+/* Desktops & Large Laptops (1032px - 1280px) */
+@media (max-width: 1280px) {
+  .hero-main-title {
+    font-size: 3rem;
+  }
+
+  .hero-primary-img {
+    height: 420px;
+  }
+}
+
+/* Laptops & Tablets Landscape (max-width: 1032px) */
+@media (max-width: 1032px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-toggle-btn {
+    display: inline-flex;
+  }
+
+  .header-actions .icon-btn,
+  .header-actions .header-cta-btn {
+    display: none;
+    /* Moved to mobile drawer / hidden in mobile header */
+  }
+
+  .hero-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-visual-frame {
+    order: -1;
+  }
+
+  .hero-primary-img {
+    height: 380px;
+  }
+
+  .pedagogy-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .workshop-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .workshop-accent-box {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* Medium Tablets & Foldables (max-width: 960px) */
+@media (max-width: 960px) {
+  .disciplines-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .disciplines-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .discipline-title,
+  .discipline-desc {
+    min-height: auto;
+  }
+}
+
+/* Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  .brand-logo-img {
+    height: 38px;
+    max-width: 52px;
+  }
+
+  .brand-title {
+    font-size: 1rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.625rem;
+  }
+
+  .cta-pill,
+  .cta-v2-pill {
+    padding: 0.35rem 0.875rem;
+    font-size: 0.75rem;
+    gap: 0.375rem;
+    white-space: nowrap;
+  }
+
+  .btn-login {
+    padding: 0.45rem 0.875rem;
+    font-size: 0.8125rem;
+  }
+
+  .hero-editorial-section {
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .pedagogy-section,
+  .disciplines-section,
+  .workshop-section,
+  .gallery-showcase-section,
+  .atelier-cta-section {
+    padding: 3.5rem 0;
+  }
+
+  .hero-floating-badge {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .pedagogy-imagery-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .pedagogy-img-offset {
+    margin-top: 0;
+  }
+
+  .pedagogy-img-tall {
+    height: 260px;
+  }
+
+  .gallery-tile {
+    height: 320px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding-top: 3rem;
+  }
+
+  .footer-bottom {
+    padding: 1.75rem 1.25rem 4.75rem;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem 1.25rem;
+  }
+
+  .footer-legal-links .footer-link {
+    white-space: nowrap;
+    font-size: 0.8125rem;
+  }
+
+  #scroll-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  html[dir="rtl"] #scroll-to-top {
+    right: auto;
+    left: 1.25rem;
+  }
+}
+
+/* Mobile Screens: 440px, 427px, 412px, 393px, 375px, 360px */
+@media (max-width: 440px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .site-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-main-title {
+    font-size: 2.125rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .cta-pill,
+  .cta-v2-pill {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.025em;
+    gap: 0.3rem;
+    white-space: nowrap;
+  }
+
+  .cta-pill-extra {
+    display: none;
+  }
+
+  .hero-stats-row,
+  .hero-stats-row-center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0.25rem 0;
+    border: none;
+  }
+
+  .hero-stat-pill,
+  .page-hero-banner .hero-stat-pill {
+    min-width: 0;
+    padding: 0.625rem 0.35rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-stat-value,
+  .page-hero-banner .hero-stat-value {
+    font-size: 1.25rem;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+    text-align: center;
+  }
+
+  .hero-stat-label,
+  .page-hero-banner .hero-stat-label {
+    font-size: 0.625rem;
+    letter-spacing: 0.02em;
+    line-height: 1.25;
+    text-align: center;
+    white-space: normal;
+    word-break: normal;
+  }
+
+  .curriculum-ratio-bar {
+    height: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ratio-seg-label {
+    display: none;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+  }
+
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-secondary {
+    width: 100%;
+  }
+
+  .hero-primary-img {
+    height: 280px;
+  }
+
+  .workshop-main-img {
+    height: 260px;
+  }
+
+  .discipline-thumb {
+    height: 210px;
+  }
+
+  .cta-btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-btn-group .btn-primary,
+  .cta-btn-group .btn-secondary {
+    width: 100%;
+  }
+}
+
+/* Ultra Small Mobiles: 360px & 375px */
+@media (max-width: 375px) {
+  .hero-stats-row,
+  .hero-stats-row-center {
+    gap: 0.35rem;
+  }
+
+  .hero-stat-pill,
+  .page-hero-banner .hero-stat-pill {
+    padding: 0.5rem 0.2rem;
+    border-radius: 0.5rem;
+  }
+
+  .hero-stat-value,
+  .page-hero-banner .hero-stat-value {
+    font-size: 1.125rem;
+  }
+
+  .hero-stat-label,
+  .page-hero-banner .hero-stat-label {
+    font-size: 0.5625rem;
+  }
+
+  .brand-title {
+    font-size: 0.875rem;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .section-heading {
+    font-size: 1.75rem;
+  }
+
+  .footer-bottom-container div:first-child {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .footer-legal-links .footer-link {
+    font-size: 0.75rem;
+  }
+
+  .cta-pill,
+  .cta-v2-pill {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.02em;
+    gap: 0.25rem;
+    white-space: nowrap;
+  }
+}
+
+/* Accessibility: Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Home 2 Responsive Extensions */
+@media (max-width: 1032px) {
+  .tools-v2-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .specialization-mosaic-5 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .spec-mosaic-card.spec-mosaic-featured {
+    grid-column: span 2;
+    height: 320px;
+  }
+
+  .spec-mosaic-card {
+    height: 220px;
+  }
+
+  .mentors-v2-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .mentor-experience-plate {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .facilities-showcase-wrap {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .facility-showcase-main {
+    height: 360px;
+  }
+
+  .facility-showcase-secondary {
+    height: auto;
+  }
+
+  .facility-secondary-img-wrap {
+    height: 240px;
+    flex: none;
+  }
+
+  .hero-v2-panoramic-img {
+    height: 360px;
+  }
+
+  .hero-v2-badge-left,
+  .hero-v2-badge-right {
+    position: static;
+    margin: 1rem auto 0;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-v2-section,
+  .tools-v2-section,
+  .curriculum-v2-section,
+  .mentors-v2-section,
+  .facilities-v2-section,
+  .cta-v2-section {
+    padding: 3.5rem 0;
+  }
+
+  .mentor-portrait-img {
+    height: 320px;
+  }
+
+  .facility-v2-card {
+    height: 300px;
+  }
+
+  .specialization-mosaic-5 {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .spec-mosaic-card.spec-mosaic-featured {
+    grid-column: span 1;
+    height: 280px;
+  }
+
+  .spec-mosaic-card {
+    height: 200px;
+  }
+
+  .tool-v2-title,
+  .tool-v2-desc {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .hero-v2-panoramic-img {
+    height: 240px;
+  }
+}
+
+/* About Page Responsive Extensions */
+@media (max-width: 1032px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-hero-img-wrap {
+    order: -1;
+  }
+
+  .philosophy-panoramic-wrap {
+    height: 260px;
+    margin: 2rem 0 1.5rem;
+  }
+
+  .philosophy-milestones-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-specs-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-hero-badge {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-hero-section,
+  .philosophy-section,
+  .faculty-heritage-section,
+  .studio-specs-section,
+  .about-cta-section {
+    padding: 3.5rem 0;
+  }
+
+  .about-hero-img {
+    height: 320px;
+  }
+
+  .philosophy-img {
+    height: 300px;
+  }
+
+  .studio-specs-img {
+    height: 280px;
+  }
+
+  .specs-grid-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-card {
+    padding: 1.5rem;
+  }
+
+  .faculty-name,
+  .faculty-bio {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .about-hero-img {
+    height: 240px;
+  }
+}
+
+/* Courses Page Responsive Extensions */
+@media (max-width: 1032px) {
+  .courses-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .practicum-grid,
+  .methodology-trio-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .milestones-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .courses-hero-section,
+  .programs-catalog-section,
+  .practicum-lab-section,
+  .milestones-process-section,
+  .courses-cta-section {
+    padding: 3.5rem 0;
+  }
+
+  .courses-hero-img {
+    height: 320px;
+  }
+
+  .practicum-img {
+    height: 280px;
+  }
+
+  .program-title,
+  .program-desc {
+    min-height: auto;
+  }
+
+  .milestones-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 440px) {
+  .courses-hero-img {
+    height: 240px;
+  }
+}
+
+/* Timings Page Responsive Extensions */
+@media (max-width: 1032px) {
+  .timings-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .cohorts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guarantee-grid,
+  .guarantee-matrix-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hours-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .timings-hero-section,
+  .cohorts-schedule-section,
+  .workstation-guarantee-section,
+  .hours-matrix-section,
+  .timings-cta-section {
+    padding: 3.5rem 0;
+  }
+
+  .timings-hero-img {
+    height: 320px;
+  }
+
+  .guarantee-img {
+    height: 280px;
+  }
+
+  .cohort-title,
+  .cohort-desc {
+    min-height: auto;
+  }
+
+  .hours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .curriculum-spectrum-wrap {
+    padding: 1.5rem 1rem;
+  }
+
+  .curriculum-ratio-bar {
+    height: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .ratio-seg-label {
+    font-size: 0.6875rem;
+  }
+
+  .ratio-seg-trial .ratio-seg-label {
+    display: none;
+  }
+
+  .curriculum-stream-item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .stream-val-col {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .stream-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .curriculum-spectrum-foot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .timings-hero-img {
+    height: 240px;
+  }
+}
+
+/* Gallery Page Responsive Extensions */
+@media (max-width: 1032px) {
+  .gallery-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .mosaic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bts-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .bts-craft-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .careers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .gallery-hero-section,
+  .mosaic-gallery-section,
+  .bts-craft-section,
+  .careers-showcase-section,
+  .gallery-cta-section {
+    padding: 3.5rem 0;
+  }
+
+  .gallery-hero-img {
+    height: 320px;
+  }
+
+  .mosaic-item {
+    height: 320px;
+  }
+
+  .bts-img {
+    height: 280px;
+  }
+
+  .bts-craft-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .career-title,
+  .career-desc {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .gallery-hero-img {
+    height: 240px;
+  }
+
+  .mosaic-item {
+    height: 260px;
+  }
+}
+
+/* Contact Page Responsive Extensions */
+@media (max-width: 1032px) {
+  .contact-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .enrollment-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .campus-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .faq-grid-4col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact-hero-section,
+  .enrollment-form-section,
+  .campus-location-section,
+  .admissions-faq-section,
+  .contact-cta-section {
+    padding: 3.5rem 0;
+  }
+
+  .contact-hero-img {
+    height: 320px;
+  }
+
+  .campus-img {
+    height: 280px;
+  }
+
+  .campus-map-wrapper {
+    height: 360px;
+    border-radius: 0.75rem;
+  }
+
+  .enrollment-form-card {
+    padding: 1.5rem;
+  }
+
+  .form-grid-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-question {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .contact-hero-img {
+    height: 240px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE RULES FOR FULL VIEWPORT & INNER HERO BANNERS
+   (Strict same height across all 5 inner pages)
+   ============================================================ */
+@media (max-width: 1032px) {
+  .hero-v2-section {
+    min-height: calc(100vh - var(--header-height));
+    padding: 4rem 1.25rem;
+  }
+
+  .page-hero-banner {
+    min-height: 440px;
+    /* Equal height across all 5 inner pages */
+    padding: 4rem 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-v2-section {
+    min-height: calc(100vh - var(--header-height));
+    padding: 3.5rem 1rem;
+  }
+
+  .page-hero-banner {
+    min-height: 400px;
+    /* Equal height across all 5 inner pages */
+    padding: 3.5rem 1rem;
+  }
+
+  .page-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .page-hero-desc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .hero-v2-section {
+    min-height: 100vh;
+    padding: 3rem 1rem;
+  }
+
+  .page-hero-banner {
+    min-height: 380px;
+    /* Equal height across all 5 inner pages on small mobile */
+    padding: 3rem 1rem;
+  }
+
+  .page-hero-title {
+    font-size: 1.875rem;
+  }
+
+  .facility-specs-ribbon {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-map-wrapper {
+    height: 300px;
+  }
+}

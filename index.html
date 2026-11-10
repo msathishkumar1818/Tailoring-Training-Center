@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailoring Training Center | Haute Couture & Master Pattern Making</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/icons/brand-mark.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Branded Page Loader -->
+  <div id="page-loader" role="status" aria-live="polite" aria-label="Loading Tailoring Training Center">
+    <div class="loader-brand">
+      <div class="loader-ring"></div>
+      <img src="assets/images/icons/brand-mark.svg" alt="Tailoring Training Center" class="loader-logo-img">
+    </div>
+    <div class="loader-text">Tailoring Training Center</div>
+  </div>
+
+  <!-- Fixed Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+
+      <!-- Brand Logo + Name -->
+      <a href="index.html" class="brand-link" aria-label="Tailoring Training Center Homepage">
+        <img src="assets/images/icons/brand-mark.svg" alt="Tailoring Training Center Brand Logo" class="brand-logo-img">
+        <div class="brand-text-wrap">
+          <span class="brand-title">Tailoring Training Center</span>
+          <span class="brand-subtitle">Artisan Couture Academy</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation: Exactly 6 Primary Items -->
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+
+        <!-- Nav Item 1: Home (Dropdown Click-Only) -->
+        <div class="nav-item has-dropdown">
+          <button type="button" class="nav-link nav-dropdown-trigger active" aria-expanded="false" aria-haspopup="true"
+            aria-label="Toggle Home menu">
+            <span>Home</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="index.html" class="dropdown-link active" role="menuitem">
+              <span>Home 1 (Artisan Editorial)</span>
+              <span class="dropdown-badge">V1</span>
+            </a>
+            <a href="home-2.html" class="dropdown-link" role="menuitem">
+              <span>Home 2 (Academy & Atelier)</span>
+              <span class="dropdown-badge">V2</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nav Item 2: About -->
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </div>
+
+        <!-- Nav Item 3: Courses -->
+        <div class="nav-item">
+          <a href="courses.html" class="nav-link">Courses</a>
+        </div>
+
+        <!-- Nav Item 4: Batch Timings -->
+        <div class="nav-item">
+          <a href="timings.html" class="nav-link">Batch Timings</a>
+        </div>
+
+        <!-- Nav Item 5: Gallery -->
+        <div class="nav-item">
+          <a href="gallery.html" class="nav-link">Gallery</a>
+        </div>
+
+        <!-- Nav Item 6: Contact -->
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+      </nav>
+
+      <!-- Desktop Actions: RTL Toggle, Dark Mode Toggle, CTA Button -->
+      <div class="header-actions">
+        <button type="button" class="icon-btn dir-toggle-btn"
+          aria-label="Toggle text direction (LTR / RTL)">RTL</button>
+        <button type="button" class="icon-btn theme-toggle-btn" aria-label="Switch to Dark Mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="contact.html" class="header-cta-btn">
+          <span>Enroll Now</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button type="button" class="mobile-toggle-btn" aria-label="Open mobile navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Menu -->
+  <div class="mobile-drawer-overlay" aria-hidden="true">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-link">
+          <img src="assets/images/icons/brand-mark.svg" alt="Tailoring Training Center" class="brand-logo-img">
+          <div class="brand-text-wrap">
+            <span class="brand-title">Tailoring Training Center</span>
+            <span class="brand-subtitle">Artisan Couture Academy</span>
+          </div>
+        </a>
+        <button type="button" class="icon-btn mobile-close-btn" aria-label="Close mobile navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li class="mobile-accordion">
+          <button type="button" class="mobile-nav-link mobile-accordion-trigger active" aria-expanded="false">
+            <span>Home</span>
+            <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-accordion-content">
+            <a href="index.html" class="mobile-sub-link active">Home 1 (Artisan Editorial)</a>
+            <a href="home-2.html" class="mobile-sub-link">Home 2 (Academy & Atelier)</a>
+          </div>
+        </li>
+
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="courses.html" class="mobile-nav-link">Courses</a></li>
+        <li><a href="timings.html" class="mobile-nav-link">Batch Timings</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-controls-row">
+          <button type="button" class="icon-btn dir-toggle-btn"
+            aria-label="Toggle text direction (LTR / RTL)">RTL</button>
+          <button type="button" class="icon-btn theme-toggle-btn" aria-label="Switch to Dark Mode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main Content: Exactly 6 Content Sections (Lean, Punchy Text) -->
+  <main class="main-wrapper" id="main-content">
+
+    <!-- ==========================================
+         SECTION 1: HERO EDITORIAL SHOWCASE
+         ========================================== -->
+    <section class="hero-editorial-section" aria-label="Atelier Introduction">
+      <div class="site-container">
+        <div class="hero-editorial-grid">
+
+          <div class="hero-editorial-content">
+            <div>
+              <span class="eyebrow">Professional Couture Academy</span>
+              <h1 class="hero-main-title">
+                Where Master Tailoring Meets <span>Haute Couture</span>
+              </h1>
+            </div>
+
+            <p class="hero-desc">
+              Hands-on training in precision drafting, bespoke draping, and luxury bridal construction.
+            </p>
+
+            <div class="hero-stats-row">
+              <div class="hero-stat-pill">
+                <span class="hero-stat-value">100%</span>
+                <span class="hero-stat-label">Hands-On Practice</span>
+              </div>
+              <div class="hero-stat-pill">
+                <span class="hero-stat-value">4,800+</span>
+                <span class="hero-stat-label">Graduates</span>
+              </div>
+              <div class="hero-stat-pill">
+                <span class="hero-stat-value">1:8</span>
+                <span class="hero-stat-label">Mentor Ratio</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="courses.html" class="btn-primary">
+                <span>Explore Master Courses</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="timings.html" class="btn-secondary">
+                <span>View Schedules</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual-frame">
+            <img src="assets/images/hero/p1.jpg"
+              alt="Artisan tailor constructing high couture garment on sewing machine" class="hero-primary-img">
+
+            <div class="hero-floating-badge">
+              <div class="badge-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="badge-title">Govt. Recognized Certification</div>
+                <div class="badge-desc">Nationwide valid diploma</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: ARTISAN PEDAGOGY MOSAIC
+         ========================================== -->
+    <section class="pedagogy-section" aria-label="Teaching Methodology">
+      <div class="site-container">
+        <div class="pedagogy-grid">
+
+          <div class="pedagogy-imagery-stack">
+            <img src="assets/images/sections/p2.jpg"
+              alt="Precision measuring tape and pattern paper for couture drafting" class="pedagogy-img-tall">
+            <img src="assets/images/sections/p3.jpg" alt="Fine silk spools and artisanal tailoring needles in work tray"
+              class="pedagogy-img-tall pedagogy-img-offset">
+          </div>
+
+          <div>
+            <span class="eyebrow">Artisanal Pedagogy</span>
+            <h2 class="section-heading">Master Every Seam from Raw Cloth to Finished Silhouette</h2>
+            <p class="section-subtext">
+              From millimeter measurements to muslin toiles and hand-finished seams.
+            </p>
+
+            <div class="pedagogy-flow-list">
+              <div class="pedagogy-step-item">
+                <span class="pedagogy-step-num">01</span>
+                <div>
+                  <h3 class="pedagogy-step-title">Anatomical Measurement & Draping</h3>
+                  <p class="pedagogy-step-desc">Custom body contours, posture corrections, and organic 3D draping.</p>
+                </div>
+              </div>
+
+              <div class="pedagogy-step-item">
+                <span class="pedagogy-step-num">02</span>
+                <div>
+                  <h3 class="pedagogy-step-title">Precision Drafting & Canvas Tailoring</h3>
+                  <p class="pedagogy-step-desc">Curve formulas, sleeve pitching, and horsehair canvas interlinings.</p>
+                </div>
+              </div>
+
+              <div class="pedagogy-step-item">
+                <span class="pedagogy-step-num">03</span>
+                <div>
+                  <h3 class="pedagogy-step-title">Haute Couture Embellishment</h3>
+                  <p class="pedagogy-step-desc">Zardozi needlework, bead embroidery, and invisible edge finishes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: SIGNATURE MASTER DISCIPLINES
+         ========================================== -->
+    <section class="disciplines-section" aria-label="Flagship Programs">
+      <div class="site-container">
+
+        <div class="disciplines-header">
+          <div>
+            <span class="eyebrow">Core Specializations</span>
+            <h2 class="section-heading">Flagship Master Diplomas</h2>
+          </div>
+          <a href="courses.html" class="btn-secondary">
+            <span>View All Curriculum</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="disciplines-grid">
+
+          <!-- Card 1 -->
+          <article class="discipline-card">
+            <img src="assets/images/products/p4.jpg" alt="Artisan stitching gold-embroidered bridal blouse in atelier"
+              class="discipline-thumb">
+            <div class="discipline-body">
+              <div>
+                <div class="discipline-badge-row">
+                  <span class="discipline-tag">Diploma Program</span>
+                  <span class="discipline-tag discipline-tag-gold">Most Popular</span>
+                </div>
+                <h3 class="discipline-title">Master Bridal Blouse & South Indian Couture</h3>
+                <p class="discipline-desc">
+                  24 bridal necklines, princess cut drafting, padded cups, and custom bridal fit.
+                </p>
+              </div>
+              <div class="discipline-footer">
+                <span class="discipline-meta">3 Months • 48 Hours</span>
+                <a href="courses.html" class="btn-primary btn-card-action">
+                  Enroll Program
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="discipline-card">
+            <img src="assets/images/products/p5.jpg" alt="Master tailor adjusting fabric pattern and chalk guidelines"
+              class="discipline-thumb">
+            <div class="discipline-body">
+              <div>
+                <div class="discipline-badge-row">
+                  <span class="discipline-tag">Professional Master</span>
+                  <span class="discipline-tag discipline-tag-navy">Advanced Level</span>
+                </div>
+                <h3 class="discipline-title">Western Pattern Engineering & Tailored Suiting</h3>
+                <p class="discipline-desc">
+                  Blazers, tailored trousers, sheath dresses, and commercial grading formulas.
+                </p>
+              </div>
+              <div class="discipline-footer">
+                <span class="discipline-meta">6 Months • 96 Hours</span>
+                <a href="courses.html" class="btn-primary btn-card-action">
+                  Enroll Program
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: WORKSHOP APPRENTICESHIP JOURNEY
+         ========================================== -->
+    <section class="workshop-section" aria-label="Learning Environment">
+      <div class="site-container">
+        <div class="workshop-grid">
+
+          <div>
+            <span class="eyebrow">Studio Experience</span>
+            <h2 class="section-heading">Designed as a Working Atelier, Not a Dull Classroom</h2>
+            <p class="section-subtext">
+              Train on high-speed industrial lockstitch machines and full-scale cutting tables.
+            </p>
+
+            <div class="workshop-steps-list">
+              <div class="workshop-step-row">
+                <div class="step-marker">1</div>
+                <div>
+                  <h3 class="step-content-heading">Individual Industrial Machine Stations</h3>
+                  <p class="step-content-text">No machine sharing. Practice on Juki and Brother lockstitch units.</p>
+                </div>
+              </div>
+
+              <div class="workshop-step-row">
+                <div class="step-marker">2</div>
+                <div>
+                  <h3 class="step-content-heading">Full-Scale Pattern Drafting Racks</h3>
+                  <p class="step-content-text">Access French curves, hip rulers, and life-size drafting rolls.</p>
+                </div>
+              </div>
+
+              <div class="workshop-step-row">
+                <div class="step-marker">3</div>
+                <div>
+                  <h3 class="step-content-heading">Live Client Trial & Fitting Sessions</h3>
+                  <p class="step-content-text">Real client trial sessions to master posture adjustments.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="workshop-photo-wrap">
+            <img src="assets/images/about/p6.jpg"
+              alt="Students and mentors working together in the bright tailoring studio" class="workshop-main-img">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: GRADUATE CREATIONS SHOWCASE
+         ========================================== -->
+    <section class="gallery-showcase-section" aria-label="Student Portfolio Showcase">
+      <div class="site-container">
+
+        <div class="section-center-head">
+          <span class="eyebrow">Atelier Portfolios</span>
+          <h2 class="section-heading">Creations Handcrafted by Our Enrolled Students</h2>
+          <p class="section-subtext section-subtext-centered">
+            Handcrafted by apprentices within their first 12 weeks of training.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-tile">
+            <img src="assets/images/gallery/p7.jpg" alt="Floor length couture evening gown tailored by academy student"
+              class="gallery-img">
+            <div class="gallery-caption">
+              <h3 class="gallery-title">Sculptural Silk Evening Gown</h3>
+              <p class="gallery-subtitle">By Ananya R. • 6-Month Couture Program</p>
+            </div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="assets/images/gallery/p8.jpg" alt="Rich embroidered bridal blouse tailored by academy student"
+              class="gallery-img">
+            <div class="gallery-caption">
+              <h3 class="gallery-title">Intricate Zardozi Bridal Blouse</h3>
+              <p class="gallery-subtitle">By Meena K. • 3-Month Master Program</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 6: FINAL ATELIER VISIT & ENROLLMENT CTA
+         (Mandatory Last Section)
+         ========================================== -->
+    <section class="atelier-cta-section" aria-label="Admissions Call to Action">
+      <div class="cta-bg-overlay"></div>
+      <div class="site-container">
+        <div class="cta-inner-card">
+          <span class="cta-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Next Batch Starts Monday<span class="cta-pill-extra"> • Limited to 12 Seats</span></span>
+          </span>
+
+          <h2 class="cta-heading">Your Journey to Master Couture Tailoring Starts Here</h2>
+
+          <p class="cta-desc">
+            Visit our training atelier, meet our master faculty, and receive personal guidance.
+          </p>
+
+          <div class="cta-btn-group">
+            <button type="button" class="btn-primary" data-open-modal="auth">
+              <span>Enroll in Next Batch</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="contact.html" class="btn-secondary btn-cta-secondary">
+              <span>Schedule Atelier Tour</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scroll to Top Button -->
+  <button type="button" id="scroll-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Shared Editorial Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+
+      <div class="footer-col">
+        <a href="index.html" class="brand-link">
+          <img src="assets/images/icons/brand-mark.svg" alt="Tailoring Training Center Logo" class="brand-logo-img">
+          <div class="brand-text-wrap">
+            <span class="brand-title brand-title-footer">Tailoring Training Center</span>
+            <span class="brand-subtitle">Artisan Couture Academy</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">
+          Empowering designers, bridal couturiers, and pattern-makers through hands-on atelier training.
+        </p>
+        <div class="footer-social-links" aria-label="Social Media Channels">
+          <a href="https://instagram.com" class="footer-social-btn" aria-label="Follow us on Instagram" target="_blank"
+            rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://facebook.com" class="footer-social-btn" aria-label="Follow us on Facebook" target="_blank"
+            rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://youtube.com" class="footer-social-btn" aria-label="Subscribe on YouTube" target="_blank"
+            rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+              </path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+          </a>
+          <a href="https://wa.me/919442012345" class="footer-social-btn" aria-label="Chat on WhatsApp" target="_blank"
+            rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Academy</h3>
+        <ul class="footer-nav-list">
+          <li><a href="index.html" class="footer-link">Home Atelier</a></li>
+          <li><a href="home-2.html" class="footer-link">Home Academy</a></li>
+          <li><a href="about.html" class="footer-link">Our Heritage</a></li>
+          <li><a href="courses.html" class="footer-link">Master Diplomas</a></li>
+          <li><a href="gallery.html" class="footer-link">Atelier Showcase</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Schedules</h3>
+        <ul class="footer-nav-list">
+          <li><a href="timings.html" class="footer-link">Morning Batches</a></li>
+          <li><a href="timings.html" class="footer-link">Afternoon Practicum</a></li>
+          <li><a href="timings.html" class="footer-link">Weekend Intensives</a></li>
+          <li><a href="contact.html" class="footer-link">Admissions Form</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Atelier Location</h3>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>42 Fashion Boulevard, Couture Avenue, Tamil Nadu, India</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span>+91 94420 12345 / +91 98401 67890</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>admissions@tailoringcenter.edu</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <div>
+          &copy; 2026 Tailoring Training Center. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="contact.html" class="footer-link">Privacy Policy</a>
+          <a href="contact.html" class="footer-link">Terms of Enrollment</a>
+          <a href="contact.html" class="footer-link">Student Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Shared Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

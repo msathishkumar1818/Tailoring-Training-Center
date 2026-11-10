@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Tailoring Training Center sewing mark</title>
+  <circle cx="64" cy="64" r="60" fill="#fffaf0" stroke="#d4af37" stroke-width="4"/>
+  <path d="M56 31c0-5 4-9 9-9h2c5 0 9 4 9 9v8c12 3 21 12 25 24l9 27c-13 9-29 14-45 14S33 99 20 90l9-27c4-12 13-21 27-24z" fill="#0e1e38"/>
+  <path d="M29 64c12-4 22-12 29-24 7 15 20 25 41 33l8 17c-27 15-59 15-86 0z" fill="#c71865"/>
+  <path d="m35 70 56-17" fill="none" stroke="#f5d77f" stroke-linecap="round" stroke-width="7"/>
+  <path d="m43 63 2 7m9-10 2 7m9-10 2 7m9-10 2 7m9-10 2 7" fill="none" stroke="#0e1e38" stroke-linecap="round" stroke-width="2.5"/>
+  <path d="M64 22v-8m-5 0h10" fill="none" stroke="#d4af37" stroke-linecap="round" stroke-width="4"/>
+</svg>
